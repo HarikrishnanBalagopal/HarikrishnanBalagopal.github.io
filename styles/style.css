@@ -1,0 +1,118 @@
+:root
+{
+	--main-bg-red: #F44336;
+  	--main-bg-blue: #2196F3;
+  	--main-bg-green: #4CAF50;
+  	--main-bg-yellow: #FFEB3B;
+  	--main-bg-grey: #9E9E9E;
+	--button-active-bg: #1DE9B6;
+	--button-active-text: #FFFF00;
+	--button-bg: #E0F7FA;
+	--button-text: ##006064;
+	--button-hover-bg: #18FFFF;
+	--button-hover-text: #01579B;
+	--button-outline: #0097A7;
+	--button-hover-outline: #0288D1;
+	--button-active-outline: #FFD600;
+}
+
+*
+{
+	box-sizing: border-box;
+	font-family: monospace;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+body
+{
+	background: #D7CCC8;
+}
+
+textarea
+{
+	background: #FAFAFA;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
+}
+
+button
+{
+	width: 64px;
+	height: 64px;
+	outline: 2px solid var(--button-outline);
+	background: var(--button-bg);
+	color: var(--button-text);
+	outline-offset: -4px;
+	border-radius: 4px;
+	-moz-outline-radius: 4px;
+}
+
+button:hover
+{
+	background: var(--button-hover-bg);
+	color: var(--button-hover-text);
+	outline-color: var(--button-hover-outline);
+}
+
+button:active
+{
+	background: var(--button-active-bg);
+	color: var(--button-active-text);
+	outline-color: var(--button-active-outline);
+}
+
+.controls
+{
+    height: 64px;
+}
+
+.main-view
+{
+	min-height: 528px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "lexer input output"
+						 "parser input output";
+}
+
+.lexer
+{
+	display: grid;
+	grid-template-rows: 64px 1fr;
+	background: var(--main-bg-yellow);
+	grid-area: lexer;
+}
+
+.parser
+{
+	display: grid;
+	grid-template-rows: 64px 1fr;
+	background: var(--main-bg-green);
+	grid-area: parser;
+}
+
+.input
+{
+	display: grid;
+	grid-template-rows: 64px 1fr;
+	background: var(--main-bg-blue);
+	grid-area: input;
+}
+
+.output
+{
+	display: grid;
+	grid-template-rows: 64px 1fr;
+	background: var(--main-bg-red);
+	grid-area: output;
+}
+
+.controls span
+{
+	padding: 4px;
+	font-family: 'Roboto', sans-serif;
+}
