@@ -12,14 +12,12 @@
 .parser-demo-view
 {
 	font-family: monospace;
-	min-height: 528px;
+	min-height: 800px;
 	display: grid;
 	overflow: auto;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "details details details"
-						 "lexer input output"
-						 "parser input output";
+	grid-template-areas: "details details details" "lexer input output" "parser input output";
 }
 
 .lexer

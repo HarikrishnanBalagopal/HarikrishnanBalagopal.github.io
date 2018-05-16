@@ -1,5 +1,15 @@
 .footer
 {
 	text-align: right;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer ul
+{
+	list-style: none;
+}
+
+.footer ul li a
+{
+	color: white;
 }
