@@ -1,7 +1,11 @@
 const context = {};
 
+const HashRouter = ReactRouterDOM.HashRouter;
+
 //initialize(context);
 ReactDOM.render(
-	<MainView />,
+	<HashRouter>
+		<MainView />
+	</HashRouter>,
 	select('#app')
 );
