@@ -85,6 +85,17 @@ class ParserDemoView extends React.Component
 	{
 		return (
 			<div className="parser-demo-view">
+                <div className="project-details">
+                    <h1>Demo for Parser Generator library in JS</h1>
+                        Instructions:
+                        <ol>
+                            <li>Click "Gen Lexer" to generate the lexer object.</li>
+                            <li>Input the context free grammar producton rules in the bottom left "PARSER" rules area.</li>
+                            <li>Click "Gen Parser" to generate the CLR(1) parsing table for that grammar.</li>
+                            <li>Input some code to be parsed in the "INPUT" column.</li>
+                            <li>Click "PARSE" to generate the Abstract Syntax Tree by parsing the code, Output will be displayed in the "OUTPUT" column.</li>
+                        </ol>
+                </div>
         		<div className="lexer">
             		<div className="controls">
                         <span>LEXER</span>
@@ -112,7 +123,7 @@ class ParserDemoView extends React.Component
         		<div className="output">
                     <div className="controls">
                         <span>OUTPUT</span>
-                        <button onClick={this.handleOutputClear}><i className="fa fa-trash"></i></button>
+                        <button onClick={this.handleOutputClear} title="Trash Output"><i className="fa fa-trash"></i></button>
                     </div>
         		    <div className="console"><textarea value={this.state.output} readOnly></textarea></div>
         		</div>
