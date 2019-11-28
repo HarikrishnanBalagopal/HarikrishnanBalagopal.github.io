@@ -87,7 +87,7 @@ class ParserDemoView extends React.Component
 			<div className="parser-demo-view">
                 <div className="project-details">
                     <h1>Demo for Parser Generator library in JS</h1>
-                        A demo of <a href="https://github.com/HarikrishnanBalagopal/parser">Parser Generator Library</a> for generating CLR(1) parsing table.<br/><br/>
+                        A demo of <a target="_blank" href="https://github.com/HarikrishnanBalagopal/parser-generator">Parser Generator Library</a> for generating CLR(1) parsing table.<br/><br/>
                         Instructions:
                         <ol>
                             <li>Click "Gen Lexer" to generate the lexer object.</li>

@@ -4,6 +4,19 @@ class MainView extends React.Component
 	{
 		super(props);
 	}
+	componentDidMount()
+	{
+		const modal = document.querySelector('#new-website-modal');
+		const modal_overlay = document.querySelector('#new-website-modal-overlay');
+		const modal_close_button = document.querySelector('.modal-close-button');
+
+		modal_overlay.classList.remove('hidden');
+		modal.classList.remove('hidden');
+		modal_close_button.addEventListener('click', () => {
+			modal_overlay.classList.add('hidden');
+			modal.classList.add('hidden');
+		});
+	}
 
 	render()
 	{
@@ -23,7 +36,6 @@ class MainView extends React.Component
 						<Route path="/gdb-gui" component={GdbGuiView}/>
 					</Switch>
 				</div>
-				<br/>
 				<Route component={FooterView} />
 			</div>
 		);
