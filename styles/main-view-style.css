@@ -1,6 +1,0 @@
-.main-view
-{
-	height: 100%;
-	display: grid;
-	grid-template-rows: 320px 1fr 200px;
-}

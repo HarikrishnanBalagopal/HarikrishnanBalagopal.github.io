@@ -1,0 +1,30 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "my website",
+  "scripts": {
+    "dev": "parcel index.html",
+    "clean": "rm -rf dist/",
+    "build": "parcel build index.html --public-url .",
+    "deploy": "cp -r privacy dist/ && gh-pages -d dist"
+  },
+  "browserslist": [
+    "> 5%"
+  ],
+  "author": "Hari",
+  "license": "ISC",
+  "dependencies": {
+    "@haribala/waves-element": "^1.0.0",
+    "@haribala/waves-element.js": "^1.0.0",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-glsl": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
+    "cssnano": "^5.0.17",
+    "gh-pages": "^2.1.1",
+    "http-server": "^14.1.0",
+    "parcel": "^2.3.2"
+  }
+}

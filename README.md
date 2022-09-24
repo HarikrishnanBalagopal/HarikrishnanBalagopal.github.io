@@ -1,3 +1,7 @@
-# HarikrishnanBalagopal.github.io
-Website made using React Framework
-<a href="https://harikrishnanbalagopal.github.io/">Link to Website</a>
+# Shiny new website
+
+Created using LitElement and web components.
+
+[new website](https://harikrishnanbalagopal.github.io/my-website/)
+
+[old website](https://harikrishnanbalagopal.github.io/)

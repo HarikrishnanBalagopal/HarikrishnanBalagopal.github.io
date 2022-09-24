@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Test Website</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles/footer-view-style.css"></link>
-        <link rel="stylesheet" type="text/css" href="styles/base-view-style.css"></link>
-        <link rel="stylesheet" type="text/css" href="styles/parser-demo-view-style.css"></link>
-        <link rel="stylesheet" type="text/css" href="styles/main-view-style.css"></link>
-        <link rel="stylesheet" type="text/css" href="styles/style.css"></link>
-
-        <script data-require="react-jsx@0.13.1" data-semver="0.13.1" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
-        <script crossorigin type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script crossorigin type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.2.0/react-router.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.2.2/react-router-dom.js"></script>
-
-        <script type="text/javascript" src="scripts/library/UtilityFunctions.js"></script>
-        <script type="text/javascript" src="scripts/library/TableGenerators.js"></script>
-        <script type="text/javascript" src="scripts/library/Lexer.js"></script>
-        <script type="text/javascript" src="scripts/library/LRParser.js"></script>
-        <script type="text/javascript" src="scripts/utils.js"></script>
-        <script type="text/javascript" src="scripts/rules-parser.js"></script>
-
-        <script type="text/jsx" src="scripts/components/footer-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/parser-demo-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/shop-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/forum-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/audio-visualizer-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/gdb-gui-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/base-view.jsx"></script>
-        <script type="text/jsx" src="scripts/components/main-view.jsx"></script>
-    </head>
-    <body>
-        <div id="app"></div>
-        <script type="text/jsx" src="scripts/main.jsx"></script>
-        <div id="new-website-modal" class="modal hidden">
-            <button class="modal-close-button">Close</button>
-            <div class="modal-content">
-                <h1>This website has moved !!</h1>
-                <p>You are viewing my old website which is no longer maintained.</p>
-                <p>Please visit the new website ----> <a href="https://harikrishnanbalagopal.github.io/my-website/">New Website!!</a></p>        
-            </div>
-        </div>
-        <div id="new-website-modal-overlay" class="modal-overlay hidden"></div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hari's website</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <script type="module" src="src/views/main-view.js"></script>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+    </style>
+    <main-view></main-view>
+</body>
 </html>
