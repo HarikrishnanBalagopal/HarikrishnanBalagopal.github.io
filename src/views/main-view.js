@@ -64,6 +64,16 @@ class MainView extends LitElement
             {
                 text-align: center;
             }
+            .donut-wrapper
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .donut-wrapper>h2
+            {
+                margin: 0;
+            }
         `;
     }
     render()
@@ -75,6 +85,10 @@ class MainView extends LitElement
                 <h2 class="text-align-center">Software Engineer at IBM Research, IIT Kanpur Alumnus</h2>
             </header>
             <section>
+                <div class="donut-wrapper">
+                    <h2>Thanks for visiting my page!</h2>
+                    <h2><a target="_blank" href="/asciidonut">Click here for a complimentary donut! 🍩 (Don't worry, it's zero calories.)</a></h2>
+                </div>
                 <h2>About Me</h2>
                 <p>
                     I joined IBM Research as a Software Engineer in 2020.
@@ -126,10 +140,6 @@ class MainView extends LitElement
             </section>
             <section>
                 <h2>Some of my more interesting repos</h2>
-                <p>
-                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/asciidonut">ASCII Donut</a>
-                    A spinning 3D donut using ASCII characters built using Web Assembly (WASM). See it running at <a target="_blank" href="/asciidonut">ASCII donut.</a>
-                </p>
                 <p>
                     <a target="_blank" href="https://github.com/HarikrishnanBalagopal/gdb-gui">GDB GUI</a>
                     A graphical user interface to interact with the GNU Debugger (GDB). Includes a console pass-through so you can pass more complicated commands directly to GDB. Written in <a target="_blank" href="https://elm-lang.org/">ELM</a>.
