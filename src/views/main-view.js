@@ -127,6 +127,10 @@ class MainView extends LitElement
             <section>
                 <h2>Some of my more interesting repos</h2>
                 <p>
+                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/asciidonut">ASCII Donut</a>
+                    A spinning 3D donut using ASCII characters built using Web Assembly (WASM). See it running at <a target="_blank" href="/asciidonut">ASCII donut.</a>
+                </p>
+                <p>
                     <a target="_blank" href="https://github.com/HarikrishnanBalagopal/gdb-gui">GDB GUI</a>
                     A graphical user interface to interact with the GNU Debugger (GDB). Includes a console pass-through so you can pass more complicated commands directly to GDB. Written in <a target="_blank" href="https://elm-lang.org/">ELM</a>.
                     Originally built because I was developing exploits in games and got tired of the severe lack of user friendliness of GDB's console interface.
