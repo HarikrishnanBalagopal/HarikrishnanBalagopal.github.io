@@ -1,5 +1,6 @@
 {
   "name": "my-website",
+  "packageManager": "pnpm@7.12.1",
   "version": "1.0.0",
   "description": "my website",
   "scripts": {
