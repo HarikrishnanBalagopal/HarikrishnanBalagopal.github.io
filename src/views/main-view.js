@@ -56,6 +56,14 @@ class MainView extends LitElement
                 color: transparent;
                 text-shadow: 0 0 0 var(--highlight-color);
             }
+            .max-width-overflow>iframe
+            {
+                width: 100%;
+            }
+            .text-align-center
+            {
+                text-align: center;
+            }
         `;
     }
     render()
@@ -63,15 +71,21 @@ class MainView extends LitElement
         return html`
         <div class="wrapper">
             <header>
-                <h1>Harikrishnan Balagopal</h1>
-                <h2>M.Tech. CSE IIT Kanpur</h2>
+                <h1 class="text-align-center">Harikrishnan Balagopal</h1>
+                <h2 class="text-align-center">Software Engineer at IBM Research, IIT Kanpur Alumnus</h2>
             </header>
             <section>
                 <h2>About Me</h2>
                 <p>
-                    I am a M.Tech. student in Computer Science and Engineering Department, IIT Kanpur. I am from Kerala, India. I joined IITK in 2018.
-                    My interests include Deep Learning, Computer Vision and Computer Graphics. Currently researching ways to generate videos using GANS.
-                    Interested in security research and formal verfication as a hobby.
+                    I joined IBM Research as a Software Engineer in 2020.
+                    I did my Masters in Computer Science and Engineering at IIT Kanpur (2018-2020).
+                    I am from Kerala, India.
+                    My interests include designing Cloud Native apps, Deep Learning, Computer Vision and Computer Graphics.
+                    For my thesis work, researched different ways to generate videos using GANs.
+                    Research areas include Docker, Kubernetes, Openshift, WASM, container optimization for the Edge, etc.
+                    Currently working as a maintainer for the open source <a target="_blank" href="https://move2kube.konveyor.io">Move2Kube</a> project
+                    <a target="_blank" href="https://landscape.cncf.io/card-mode?project=sandbox&selected=konveyor">(which is now officially a CNCF sandbox project).</a>
+                    Interested in security research, cryptography, blockchains, Web3 and formal verfication as a hobby.
                 </p>
                 <h2>About This Website</h2>
                 <p>
@@ -82,23 +96,23 @@ class MainView extends LitElement
             <section>
                 <h2>Favourite languages</h2>
                 <ul>
+                    <li>Golang</li>
                     <li>Python</li>
                     <li>Javascript/Typescript</li>
                     <li>Haskell</li>
                     <li>Rust</li>
-                    <li>Go</li>
                     <li>C/C++</li>
                 </ul>
             </section>
-            <section>
+            <section class="max-width-overflow">
                 <h2>Some of my shadertoy shaders</h2>
                 <p>To avoid overloading your device the shaders are paused. Hover over them to show the controls and click play to see them in action. Some of them are also interactive.</p>
-                <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/3d3XRf?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
-                <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wd3XzS?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
-                <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/3dVSzR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
-                <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdyXDV?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                <iframe height="360" frameborder="0" src="https://www.shadertoy.com/embed/3d3XRf?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                <iframe height="360" frameborder="0" src="https://www.shadertoy.com/embed/wd3XzS?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                <iframe height="360" frameborder="0" src="https://www.shadertoy.com/embed/3dVSzR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                <iframe height="360" frameborder="0" src="https://www.shadertoy.com/embed/wdyXDV?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
             </section>
-            <section>
+            <section class="max-width-overflow">
                 <h2>Indian Railways delay visualization</h2>
                 <p>Visualization created as part of main project for CS685 Data Mining course at IIT Kanpur. <a href="https://github.com/HarikrishnanBalagopalIITK/IndianRailwaysDelayMap" target="_blank">Github repo.</a></p>
                 <iframe width="640" height="640" frameborder="0" src="https://harikrishnanbalagopaliitk.github.io/IndianRailwaysDelayMap/" allowfullscreen></iframe>
@@ -137,7 +151,8 @@ class MainView extends LitElement
             <footer>
                 <h2>Awesome Stuff <span class="highlight">❤</span></h2>
                 <ul>
-                    <li><a target="_blank" href="https://codepen.io/collection/AMvJZW/">Some of my better codepens.</a></li>
+                    <li><a target="_blank" href="https://codepen.io/collection/waqNOY">Some of my better codepens</a></li>
+                    <li><a target="_blank" href="https://codepen.io/collection/AMvJZW/">Some more of my better codepens.</a></li>
                     <li><a target="_blank" href="http://madebyevan.com/webgl-path-tracing/">WebGL Path Tracing</a></li>
                     <li><a target="_blank" href="http://aem1k.com/">Javascript Hacks and Creative Coding</a></li>
                     <li><a target="_blank" href="http://aem1k.com/world/">Spinning Globe Quine</a></li>
