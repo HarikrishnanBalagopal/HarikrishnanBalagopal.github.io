@@ -160,7 +160,7 @@ class MainView extends LitElement
                     A audio visualizer extension for chrome. Made specifically for Youtube.
                 </p>
                 <p>
-                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/HarikrishnanBalagopal.github.io">Old website</a>
+                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/HarikrishnanBalagopal.github.io/releases/tag/v0.1.0">Old website</a>
                     My old website built using React.
                 </p>
                 <p>
