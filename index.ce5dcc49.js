@@ -677,6 +677,11 @@ class MainView extends (0, _litElement.LitElement) {
                     <a target="_blank" href="https://haribala.dev/starlark-webasm-demo">See it running.</a>
                 </p>
                 <p>
+                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/ascii-fluid-simulation">ASCII Fluid Simulation</a>
+                    A fluid simulation with ASCII characters using the smoothed particle hydro-dynamics method.
+                    <a target="_blank" href="https://haribala.dev/ascii-fluid-simulation">See it running.</a>
+                </p>
+                <p>
                     <a target="_blank" href="https://github.com/HarikrishnanBalagopal/gdb-gui">GDB GUI</a>
                     A graphical user interface to interact with the GNU Debugger (GDB). Includes a console pass-through so you can pass more complicated commands directly to GDB. Written in <a target="_blank" href="https://elm-lang.org/">ELM</a>.
                     Originally built because I was developing exploits in games and got tired of the severe lack of user friendliness of GDB's console interface.
@@ -690,7 +695,7 @@ class MainView extends (0, _litElement.LitElement) {
                     A audio visualizer extension for chrome. Made specifically for Youtube.
                 </p>
                 <p>
-                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/HarikrishnanBalagopal.github.io">Old website</a>
+                    <a target="_blank" href="https://github.com/HarikrishnanBalagopal/HarikrishnanBalagopal.github.io/releases/tag/v0.1.0">Old website</a>
                     My old website built using React.
                 </p>
                 <p>
