@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "my website",
   "scripts": {
+    "start": "python3 -m http.server 8080",
     "dev": "parcel index.html",
     "clean": "rm -rf dist/",
     "build": "parcel build index.html --public-url .",
