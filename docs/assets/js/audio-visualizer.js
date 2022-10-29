@@ -47,7 +47,7 @@ float sample_multiple(float f)
 
 void main()
 {
-    vec2 iResolution = vec2(1280, 720);
+    vec2 iResolution = vec2(640, 360);
     vec2 fragCoord = gl_FragCoord.xy;
     vec2 uv = (fragCoord.xy - 0.5) / iResolution.xy;
     uv = 2. * uv - 1.;
@@ -73,6 +73,8 @@ void main()
 `;
 
 function initShaderProgram(gl) {
+  const can_out = document.querySelector('#can-out');
+
   const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
   const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
   const shaderProgram = gl.createProgram();
@@ -265,14 +267,14 @@ function start() {
     },
     uniformLocations: {
       iChannel0: gl.getUniformLocation(shaderProgram, "iChannel0"),
-      iTime:gl.getUniformLocation(shaderProgram, "iTime"), 
+      iTime: gl.getUniformLocation(shaderProgram, "iTime"), 
     }
   };
   const buffers = initBuffers(gl);
   const { texture, data } = loadTexture(gl);
   programInfo.texture = texture;
   drawScene(gl, programInfo, buffers);
-  const { analyser, dataArray, dataArrayFreq, bufferLength } = initAudio();
+  const { analyser, dataArray, dataArrayFreq } = initAudio();
 
   let last_t = null;
   const TT = 1;
