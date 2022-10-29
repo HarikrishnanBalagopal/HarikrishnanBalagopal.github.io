@@ -577,6 +577,10 @@ footer {
   padding: 1em;
 }
 
+pre {
+  overflow: scroll;
+}
+
 @media screen and (min-width: 600px) {
   body:has(#sidemenu-button input:checked) {
     --side-menu-width: 50%;
