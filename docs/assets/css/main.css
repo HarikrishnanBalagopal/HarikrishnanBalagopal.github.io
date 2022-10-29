@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+:root {
+    --charcoal: #2d3033;
+    --color-gold: #fcbb34;
+    --color-cyan: rgb(0, 180, 240);
+    --color-darker-cyan: rgb(0, 140, 200);
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    --back-color: var(--charcoal);
+    --text-color: white;
+    --highlight-color: var(--color-gold);
+    --primary-font: var(--font-montserrat);
+
+    display: grid;
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 1em;
+    background-color: var(--back-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.75em;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-cyan);
+}
+
+a:hover {
+    color: var(--color-darker-cyan);
+}
+
+.highlight {
+    color: transparent;
+    text-shadow: 0 0 0 var(--highlight-color);
+}
+
+.max-width-overflow>iframe {
+    width: 100%;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.donut-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.donut-wrapper>h2 {
+    margin: 0;
+}

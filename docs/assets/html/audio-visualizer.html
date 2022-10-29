@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hari's website</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+    <link href="../css/main.css" rel="stylesheet">
+    <style>
+        canvas {
+            outline: 1px solid gold;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1em;
+            padding: 1em;
+        }
+
+        .controls button {
+            font-size: 1.5em;
+            font-family: monospace;
+            border-radius: 2em;
+            padding-inline: 1em;
+            padding-block: 0.75em;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <canvas id="can-out" width="1280" height="720"></canvas>
+        <div class="controls">
+            <audio id="audio-song-1" controls class="hidden" crossorigin="anonymous"
+                src="../audio/feel-the-bass-by-top-knot.mp3"></audio>
+            <button id="button-play">start</button>
+        </div>
+    </div>
+    <script type="module" src="../js/audio-visualizer.js"></script>
+</body>
+
+</html>

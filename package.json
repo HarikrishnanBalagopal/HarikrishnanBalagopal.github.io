@@ -1,20 +1,16 @@
 {
   "name": "my-website",
   "packageManager": "pnpm@7.12.1",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "my website",
   "scripts": {
-    "start": "python3 -m http.server 8080",
-    "dev": "parcel index.html",
-    "clean": "rm -rf dist/",
-    "build": "parcel build index.html --public-url .",
-    "deploy": "cp -r privacy CNAME dist/ && gh-pages -d dist"
+    "start": "cd docs/ && python3 -m http.server 8080"
   },
   "browserslist": [
     "> 5%"
   ],
   "author": "Hari",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "@haribala/waves-element": "^1.0.0",
     "@haribala/waves-element.js": "^1.0.0",
