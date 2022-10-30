@@ -11,46 +11,22 @@
 </head>
 
 <body>
-    <style>
-        canvas {
-            outline: 1px solid gold;
-            width: 100%;
-        }
-
-        .controls {
-            display: flex;
-            gap: 1em;
-            padding: 1em;
-        }
-
-        .controls button {
-            font-size: 1.5em;
-            font-family: monospace;
-            border-radius: 2em;
-            padding-inline: 1em;
-            padding-block: 0.75em;
-            cursor: pointer;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
     <div class="wrapper">
         <header>
+            <video playsinline muted autoplay loop src="/assets/video/bg-video.mp4" class="hero-bg-video"></video>
             <label id="sidemenu-button" class="text-shadow">≡<input type="checkbox" /></label>
             <h1 class="text-shadow">Harikrishnan Balagopal</h1>
             <h2 class="text-shadow">Software Engineer at IBM Research, IIT Kanpur Alumnus</h2>
-            <nav id="sidemenu">
-                <ul>
-                    <li><a href="/">home</a></li>
-                    <li><a href="/assets/html/projects">projects</a></li>
-                    <li><a href="/assets/html/shaders">shaders</a></li>
-                    <li><a href="/assets/html/coding-exercises">coding exercises</a></li>
-                    <li><a href="/assets/html/about.html">about</a></li>
-                </ul>
-            </nav>
         </header>
+        <nav id="sidemenu">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/assets/html/projects">projects</a></li>
+                <li><a href="/assets/html/shaders">shaders</a></li>
+                <li><a href="/assets/html/coding-exercises">coding exercises</a></li>
+                <li><a href="/assets/html/about.html">about</a></li>
+            </ul>
+        </nav>
         <section>
             <h2>Euler 2 - Even Fibonacci numbers</h2>
             <a href="https://projecteuler.net/problem=2">Euler 2</a>
