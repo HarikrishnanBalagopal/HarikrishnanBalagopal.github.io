@@ -461,6 +461,11 @@ body {
   background-image: var(--body-bg-gradient);
 }
 
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -530,6 +535,29 @@ header h2 {
   height: 100%;
   object-fit: cover;
   filter: blur(5px);
+}
+
+.image-carousel {
+  height: 12em;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.image-carousel>a {
+  flex: 0 0 auto;
+}
+
+.image-carousel>a>img {
+  height: 12em;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-gap-1em {
+  gap: 1em;
 }
 
 .text-shadow {
