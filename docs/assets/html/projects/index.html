@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <section>
-            <h2>GrandFather Clock (3d printed)</h2><br/>
+            <h2 id="grandfather-clock">GrandFather Clock (3d printed)</h2><br/>
             <div class="image-carousel flex-gap-1em">
                 <video controls class="video-max-height" src="/assets/video/clock-3d-printed/clock-front.mp4"></video>
                 <video controls class="video-max-height" src="/assets/video/clock-3d-printed/clock-tall.mp4"></video>
@@ -89,7 +89,44 @@
             </p>
         </section>
         <section>
-            <h2>Indian Railways delay visualization</h2>
+            <h2 id="led-matrix">Led Matrix (13x13)</h2><br/>
+            <div class="image-carousel flex-gap-1em">
+                <video controls class="video-max-height" src="/assets/video/led-matrix/square-zoom-in.mp4"></video>
+                <video controls class="video-max-height" src="/assets/video/led-matrix/moving-rainbow-stripe.mp4"></video>
+            </div>
+            <div class="image-carousel">
+                <a href="/assets/images/led-matrix/esp32-microcontroller.jpg">
+                    <img src="/assets/images/led-matrix/esp32-microcontroller.jpg" alt="ESP32 Microcontroller">
+                </a>
+                <a href="/assets/images/led-matrix/ws2812b-led-strip.jpg">
+                    <img src="/assets/images/led-matrix/ws2812b-led-strip.jpg" alt="WS2812B LED strip">
+                </a>
+                <a href="/assets/images/led-matrix/led-matrix-1.jpg">
+                    <img src="/assets/images/led-matrix/led-matrix-1.jpg" alt="ESP32 Microcontroller">
+                </a>
+            </div>
+            <p>
+                A 13 x 13 grid of RGB leds controlled using an ESP32 microcontroller. Parts:
+                <ul>
+                    <li>
+                        <a href="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf">WS2812B led strip</a> with 60 pixels/meter.
+                    </li>
+                    <li>
+                        <a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf">ESP32 microcontroller on a WROOM 32 dev board</a>
+                    </li>
+                    <li>5 Volt 2 Amp power supply. Later switched for a 10 Amp power supply.</li>
+                </ul>
+                There are 169 (13x13) pixels and each pixel has 3 leds (red, green and blue). Each led can draw a max of 20 milliAmps for a total of
+                10140 milliAmps ~ 10 Amps at full brightness (white on all leds).
+            </p>
+            <p>
+                The ESP32 connects to the local WiFi network and starts a TCP server.
+                Using a TCP client we can stream video and animations to the server frame by frame.
+                It can handle at least 60fps without issues.
+            </p>
+        </section>
+        <section>
+            <h2 id="indian-railways-delay">Indian Railways delay visualization</h2>
             <p>Visualization created as part of main project for CS685 Data Mining course at IIT Kanpur. <a
                     href="https://github.com/HarikrishnanBalagopalIITK/IndianRailwaysDelayMap" target="_blank">Github
                     repo.</a></p>
