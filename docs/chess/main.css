@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.pointer-events-none {
+    user-select: none;
+    pointer-events: none;
+}
+
+.chess-cell-text {
+    font-size: 0.05em;
+    font-family: monospace;
+    user-select: none;
+    pointer-events: none;
+}
+
+.chess-cell-image {
+    user-select: none;
+    pointer-events: none;
+}
+
+#div-wrapper {
+    max-width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div-controls {
+    padding: 1em;
+    display: grid;
+    grid-auto-rows: 1fr;
+    place-items: center;
+}
+
+#div-controls>* {
+    width: 100%;
+    font-family: monospace;
+}
+
+#div-controls>label {
+    font-size: 1.5em;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+#button-reset {
+    font-size: 2em;
+    cursor: pointer;
+}
